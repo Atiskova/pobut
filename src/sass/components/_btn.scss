@@ -1,0 +1,24 @@
+.btn {
+  font-family: var(--primary--fonts);
+  background: var(--button--bg--color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white--title--color);
+
+
+  border: transparent;
+
+
+  transition: background var(--transition--time);
+
+  &:hover,
+  &:focus {
+   background: var(--button--active--bg--color);
+   outline: transparent;
+}
+}

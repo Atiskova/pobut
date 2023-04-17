@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+  font-size: 18px;
+  color: #fff;
+
+  @include desktop {
+  font-size: 16px;
+  }
+
+  @include desktop1920 {
+    font-size: 21px;
+    }
+}
