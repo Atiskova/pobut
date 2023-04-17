@@ -1,0 +1,117 @@
+.visually-hidden {
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #000;
+  font-size: 18px;
+  color: #fff;
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 21px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  background: transparent;
+  border: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 19px;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1150px;
+    padding: 0 65px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1632px;
+    padding: 0 144px;
+  }
+}
+
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .navigation {
+    display: flex;
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: auto;
+  top: 0;
+  right: 0;
+  background-color: #85a279;
+}
+@media screen and (min-width: 1280px) {
+  .menu {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
