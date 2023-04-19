@@ -1,12 +1,39 @@
 <section class="hero">
-  <div>
-    <h1>Помогаем людям обустроить Быт!</h1>
-    <p>Присоединяйся к нашей большой семье!</p>
-    <p>
-      Подпишись на новости о акциях и спец предложениях и получи скидку 5 % уже
-      сейчас!
+  <div class="hero__main">
+    <h1 class="hero__title">Помогаем людям обустроить Быт!</h1>
+    <p class="hero__text">
+      <span class="hero__span">Присоединяйся к нашей большой семье!<br /> </span
+      >Подпишись на новости о акциях и спец предложениях и получи
+      <span class="hero__span">скидку 5 %</span> уже сейчас!
     </p>
-    <button>Подписатся</button>
+    <button type="button" class="hero__button">Подписатся</button>
+    <picture class="hero__image">
+      <source
+        srcset="
+          ./images/hero1px-1920-min.png 1x,
+          ./images/hero2px-1920-min.png 2x
+        "
+        media="(min-width: 1920px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero1px-1280-min.png 1x,
+          ./images/hero2px-1280-min.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero1px-320-min.png 1x,
+          ./images/hero2px-320-min.png 2x
+        "
+        media="(max-width: 1279px)"
+      />
+
+      <img src="./images/hero1px-320-min.png" alt="woman" />
+    </picture>
   </div>
   <div class="hero__aside">
     <div class="timer">

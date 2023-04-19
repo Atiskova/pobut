@@ -1,3 +1,20 @@
+header {
+  width: 320px;
+  height: 66px;
+  padding: 13px 19px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+width: 89px;
+height: 40px;
+}
+
 .navigation {
   display: none;
 
