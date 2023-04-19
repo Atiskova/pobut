@@ -1,8 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #000;
+  background: #fff;
   font-size: 18px;
   color: #fff;
+  margin: 0;
 
   @include desktop {
   font-size: 16px;
