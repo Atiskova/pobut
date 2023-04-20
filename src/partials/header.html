@@ -1,26 +1,27 @@
 <header>
   <div class="header__box">
-    <a href="/"><img class="logo" src="./images/logo-min.png" alt="logo" /></a>
+    <a href="/pobut"
+      ><img class="logo" src="./images/logo-min.png" alt="logo"
+    /></a>
     <div class="navigation">
-      <nav>
-        <ul>
+      <nav class="site-nav__box">
+        <ul class="site-nav__list">
           <li>
-            <p>Доставка</p>
+            <a class="site-nav__link" href="/pobut">Доставка</a>
           </li>
           <li>
-            <p>Контакты</p>
+            <a class="site-nav__link" href="/pobut">Контакты</a>
           </li>
           <li>
-            <p>Бонусная программа</p>
+            <a class="site-nav__link" href="/pobut">Бонусная программа</a>
           </li>
         </ul>
-        <a class="contacts__link" href="tel:+380 95 935 1423"
+        <a class="site-nav__contacts" href="tel:+380 95 935 1423"
           >+380 95 935 1423</a
         >
       </nav>
-      <div>
+      <div class="search__box">
         <form class="header__form">
-          <label class="form__label" for="searchQuery"></label>
           <input
             class="form__input"
             type="text"
@@ -36,67 +37,37 @@
             </svg>
           </button>
         </form>
-        <ul>
+        <ul class="social">
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg class="social__svg">
                 <use href="./images/symbol.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg class="social__svg">
                 <use href="./images/symbol.svg#icon-viber"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg class="social__svg">
                 <use href="./images/symbol.svg#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <p>
-              Все категории<svg width="24" height="24">
-                <use href="./images/symbol.svg#icon-category"></use>
-              </svg>
-            </p>
-          </li>
-          <li>
-            <p>Электроника</p>
-          </li>
-          <li>
-            <p>Дом и Сад</p>
-          </li>
-          <li>
-            <p>Детский мир</p>
-          </li>
-          <li>
-            <p>Отдых, спорт, хобби</p>
-          </li>
-          <li>
-            <p>Авто</p>
-          </li>
-          <li>
-            <p>Информация</p>
-          </li>
-          <li></li>
-        </ul>
-      </nav>
     </div>
-    <div  class="button__box">
-      <button type="button">
-        <svg width="26" height="26">
+    <div class="button__box">
+      <a class="basket__link" href="/pobut">
+        <svg width="26" height="26" stroke="#069">
           <use href="./images/symbol.svg#icon-basket"></use>
         </svg>
-      </button>
+      </a>
       <button type="button" class="menu-open" data-menu-open>
         <svg width="24" height="24">
           <use href="./images/symbol.svg#icon-menu"></use>
@@ -104,14 +75,64 @@
       </button>
     </div>
   </div>
-  <div class="menu visually-hidden" data-menu>
-    <div class="mob-menu">
-      <div>
-        <button type="button">
-          <svg width="26" height="26">
-            <use href="./images/symbol.svg#icon-basket"></use>
+  <nav class="nav__panel">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <button class="nav__panel__link all" type="button">
+          Все категории<svg width="20" height="20">
+            <use href="./images/symbol.svg#icon-category"></use>
           </svg>
         </button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__panel__link" type="button">Электроника</button>
+      </li>
+      <li class="nav__item nav__item__house">
+        <button class="nav__panel__link" type="button" data-house-open-1280>
+          Дом и Сад
+        </button>
+      </li>
+      <ul
+        class="category__list nav__panel__list visually-hidden"
+        data-house-1280
+      >
+        <li class="category__link__item">
+          <a class="category__link" href="/pobut">Инструменты</a>
+        </li>
+        <li class="category__link__item">
+          <a class="category__link" href="/pobut">Садовый инвентарь</a>
+        </li>
+        <li class="category__link__item">
+          <a class="category__link" href="/pobut">Посуда, кухня</a>
+        </li>
+        <li class="category__link__item">
+          <a class="category__link" href="/pobut">Другие товары</a>
+        </li>
+      </ul>
+      <li class="nav__item">
+        <button class="nav__panel__link" type="button">Детский мир</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__panel__link" type="button">
+          Отдых, спорт, хобби
+        </button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__panel__link" type="button">Авто</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__panel__link" type="button">Информация</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="menu visually-hidden" data-menu>
+    <div class="mob-menu">
+      <div class="mob__button__box">
+        <a href="/pobut">
+          <svg width="26" height="26" stroke="#fff">
+            <use href="./images/symbol.svg#icon-basket"></use>
+          </svg>
+        </a>
         <button type="button" data-menu-close>
           <svg width="24" height="24">
             <use href="./images/symbol.svg#icon-close"></use>
@@ -119,81 +140,114 @@
         </button>
       </div>
       <nav>
-        <ul>
+        <ul class="mob__list">
           <li>
-            <p>
+            <button class="mob__link" type="button" data-electronics-open>
               Электроника
-              <svg width="8" height="12">
+              <svg width="10" height="12">
                 <use href="./images/symbol.svg#icon-arrow_down"></use>
               </svg>
-            </p>
+            </button>
           </li>
+          <ul class="category__list visually-hidden" data-electronics>
+            <li>
+              <a class="category__link" href="/pobut">Техника для дома</a>
+            </li>
+            <li>
+              <a class="category__link" href="/pobut">Техника для кухни</a>
+            </li>
+            <li><a class="category__link" href="/pobut">Аудиотехника</a></li>
+            <li>
+              <a class="category__link" href="/pobut"
+                >Xолодильники, Винные холодильники, Льдогенераторы</a
+              >
+            </li>
+            <li>
+              <a class="category__link" href="/pobut"
+                >Климатическое оборудование</a
+              >
+            </li>
+            <li><a class="category__link" href="/pobut">Другое</a></li>
+          </ul>
           <li>
-            <p>
+            <button class="mob__link" type="button" data-house-open>
               Дом и Сад
-              <svg width="8" height="12">
+              <svg class="mob__img" width="10" height="12">
                 <use href="./images/symbol.svg#icon-arrow_down"></use>
               </svg>
-            </p>
+            </button>
           </li>
+          <ul class="category__list visually-hidden" data-house>
+            <li><a class="category__link" href="/pobut">Инструменты</a></li>
+            <li>
+              <a class="category__link" href="/pobut">Садовый инвентарь</a>
+            </li>
+            <li><a class="category__link" href="/pobut">Посуда, кухня</a></li>
+            <li><a class="category__link" href="/pobut">Другие товары</a></li>
+          </ul>
           <li>
-            <p>
+            <a class="mob__link" href="/pobut">
               Детский мир
-              <svg width="8" height="12">
+              <svg width="10" height="12">
                 <use href="./images/symbol.svg#icon-arrow_down"></use>
               </svg>
-            </p>
+            </a>
           </li>
           <li>
-            <p>
+            <a class="mob__link" href="/pobut" p>
               Отдых, спорт, хобби
-              <svg width="8" height="12">
+              <svg width="10" height="12">
                 <use href="./images/symbol.svg#icon-arrow_down"></use>
               </svg>
-            </p>
+            </a>
           </li>
           <li>
-            <p>Авто</p>
+            <a class="mob__link" href="/pobut">Авто</a>
           </li>
           <li>
-            <p>Информация</p>
+            <a class="mob__link" href="/pobut">Информация</a>
           </li>
           <li>
-            <p>Доставка</p>
+            <a class="mob__link" href="/pobut"
+              ><span class="mob__span">Доставка</span></a
+            >
           </li>
           <li>
-            <p>Контакты</p>
+            <a class="mob__link" href="/pobut"
+              ><span class="mob__span">Контакты</span></a
+            >
           </li>
           <li>
-            <p>Бонусная программа</p>
+            <a class="mob__link" href="/pobut"
+              ><span class="mob__span">Бонусная программа</span></a
+            >
           </li>
         </ul>
-        <ul>
+
+        <ul class="social">
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg width="28" height="28" fill="#fff">
                 <use href="./images/symbol.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg width="28" height="28" fill="#fff">
                 <use href="./images/symbol.svg#icon-viber"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow">
-              <svg width="28" height="28">
+              <svg width="28" height="28" fill="#fff">
                 <use href="./images/symbol.svg#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="contacts__link" href="tel:+380 95 935 1423"
-          >+380 95 935 1423</a
-        >
+        <a class="mob__contact" href="tel:+380 95 935 1423">+380 95 935 1423</a>
       </nav>
     </div>
   </div>

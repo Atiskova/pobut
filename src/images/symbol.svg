@@ -1,8 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-basket" viewBox="0 0 32 32">
-<path fill="none" stroke="#069" style="stroke: var(--color1, #069)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M1.778 12.653h28.444l-2.994 17.569h-21.708l-3.742-17.569zM26.039 11.817c0-5.544-4.494-10.039-10.039-10.039s-10.039 4.495-10.039 10.039"></path>
-<path fill="none" stroke="#069" style="stroke: var(--color1, #069)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M10.98 18.509h10.876M10.98 24.366h10.876"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M1.778 12.653h28.444l-2.994 17.569h-21.708l-3.742-17.569zM26.039 11.817c0-5.544-4.494-10.039-10.039-10.039s-10.039 4.495-10.039 10.039"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M10.98 18.509h10.876M10.98 24.366h10.876"></path>
 </symbol>
 <symbol id="icon-dandruff" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.3103" d="M24.828 13.241c0 6.399-5.187 11.586-11.586 11.586s-11.586-5.187-11.586-11.586c0-6.399 5.187-11.586 11.586-11.586s11.586 5.187 11.586 11.586z"></path>
