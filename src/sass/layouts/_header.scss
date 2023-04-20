@@ -80,6 +80,14 @@ header {
   line-height: calc(21 / 16);
   color: #030716;
 
+  &:hover, 
+  &:focus {
+    outline: transparent;
+  border: transparent;
+  color: #3399cc;
+
+  }
+
   @include desktop1920 {
     font-size: 21px;
     line-height: calc(28 / 21);
@@ -91,6 +99,14 @@ header {
   font-size: 21px;
   line-height: calc(44 / 21);
   color: #030716;
+
+  &:hover, 
+  &:focus {
+    outline: transparent;
+  border: transparent;
+  color: #3399cc;
+
+  }
 
   @include desktop1920 {
     font-size: 30px;
@@ -107,6 +123,11 @@ header {
   }
 }
 
+.header__form {
+  display: flex;
+  align-items: center;
+}
+
 .form__input {
   width: 424px;
   height: 40px;
@@ -116,6 +137,12 @@ header {
   background: #eff7fb;
   padding: 10px 25px;
   border: transparent;
+
+  &:hover, 
+  &:focus {
+    outline: transparent;
+  border: transparent;
+  }
 
   @include desktop1920 {
     width: 605px;
@@ -137,13 +164,42 @@ header {
   }
 }
 
+.form__icon {
+  width: 20px;
+  height: 20px;
+  @include desktop1920 {
+    width: 29px;
+    height: 29px;
+  }
+}
+
 .basket__link {
-  display: block;
+  @include desktop {
+    display: block;
   margin-left: -26px;
-  margin-top: 29px;
+  margin-top: 50px;
+  }
 
   @include desktop1920 {
     margin-top: 64px;
+  }
+}
+
+.basket__svg {
+  width: 26px;
+  height: 26px;
+  stroke: #069;
+  
+  &:hover, 
+  &:focus {
+    outline: transparent;
+  border: transparent;
+  stroke: #000;
+}
+
+  @include desktop1920 {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -250,11 +306,26 @@ header {
   position: fixed;
   z-index: 5;
   width: 320px;
-  height: auto;
+  max-height: 400px;
   top: 0;
   transform: translateX(-50%);
   left: 50%;
   padding-bottom: 39px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+  }
 
   background: linear-gradient(180deg, #3399cc 0%, #006699 100%);
 
@@ -288,9 +359,12 @@ header {
   gap: 10px;
   padding-left: 16px;
 
+  
+
   @include desktop {
     padding-left: 0;
     gap: 0;
+    
   }
 }
 
@@ -302,6 +376,11 @@ header {
   color: #ffffff;
   max-width: 206px;
 
+  &:hover,
+  &:focus {
+    outline: transparent;
+    color: #000 ;
+  }
   @include desktop1920 {
     font-size: 21px;
     line-height: calc(28 / 21);
@@ -314,6 +393,12 @@ header {
   font-size: 21px;
   line-height: calc(28 / 21);
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    color: #000 ;
+  }
 }
 
 .mob__span {
@@ -338,6 +423,12 @@ header {
 .social__svg {
   width: 28px;
   height: 28px;
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    fill: #3399cc;
+  }
 
   @include desktop1920 {
     width: 32px;
